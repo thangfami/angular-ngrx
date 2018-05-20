@@ -12,7 +12,7 @@ import * as fromActions from './actions/counter.action';
 export class AppComponent {
   counter$: Observable<number>;
   constructor(private store: Store<AppState>) {
-    this.counter$ = store.select('counter');
+    // this.counter$ = store.select('counter');
   }
 
   increment() {

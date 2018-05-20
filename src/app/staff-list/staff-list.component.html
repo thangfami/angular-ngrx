@@ -1,0 +1,9 @@
+<button (click)="getAllStaff()">All Staff</button>
+<mat-list>
+  <mat-list-item *ngFor="let staff of staffs$| async">
+    <span>{{ staff.id }}</span> |
+    <span>{{ staff.name}}</span> |
+    <span>{{ staff.age }}</span> |
+    <span>{{ staff.unit }}</span>
+  </mat-list-item>
+</mat-list>
