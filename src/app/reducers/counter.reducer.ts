@@ -6,7 +6,7 @@ export interface AppState {
 
 export function counterReducer(state: number = 0, action: fromActions.CounterActions): number {
     switch (action.type) {
-        case fromActions.INCREMENT:
+        case fromActions.INCREMENT_SUCCESS:
             return state + 1;
         case fromActions.DECREMENT:
             return state - 1;
