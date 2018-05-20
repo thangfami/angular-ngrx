@@ -8,9 +8,9 @@ export function counterReducer(state: number = 0, action: fromActions.CounterAct
     switch (action.type) {
         case fromActions.INCREMENT_SUCCESS:
             return state + 1;
-        case fromActions.DECREMENT:
+        case fromActions.DECREMENT_SUCCESS:
             return state - 1;
-        case fromActions.RESET:
+        case fromActions.RESET_SUCCESS:
             return 0;
         default:
             return state;
